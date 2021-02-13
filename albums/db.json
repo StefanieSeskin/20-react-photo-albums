@@ -2,27 +2,121 @@
     "albums": [
         {
             "id": 1,
-            "name": "Album 1",
-            "thumbnail": "https://www.placecage.com/c/200/300",
+            "name": "My Cat",
+            "thumbnail": "https://kittentoob.com/wp-content/uploads/2013/04/Jumping_Cats_3.jpg",
             "photos": [
                 {
                     "name": "photo 1",
-                    "thumbnail": "https://www.placecage.com/c/200/300"
+                    "thumbnail": "https://kittentoob.com/wp-content/uploads/2013/04/Jumping_Cats_4.jpg"
                 },
                 {
                     "name": "photo 2",
-                    "thumbnail": "https://www.placecage.com/c/200/300"
+                    "thumbnail": "https://images.unsplash.com/photo-1506014739647-c231072489c4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dGFiYnklMjBjYXR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+                },
+                {
+                    "name": "photo 3",
+                    "thumbnail": "https://images.unsplash.com/photo-1506014739647-c231072489c4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8dGFiYnklMjBjYXR8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
                 }
+                
+            ]
+        },
+
+        {
+            "id": 2,
+            "name": "My Other Cat",
+            "thumbnail": "https://kittentoob.com/wp-content/uploads/2013/04/Jumping_Cats_5.jpg",
+            "photos": [
+                {
+                    "name": "photo 1",
+                    "thumbnail": "https://www.thesprucepets.com/thmb/WlQeWMTYIRhhABWIsX915b2kg1o=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/cute-russian-blue-cat-sitting-on-the-bed--female-cat--498731394-5c2a695746e0fb00015354ac.jpg"
+                },
+                {
+                    "name": "photo 2",
+                    "thumbnail": "https://www.aspcapetinsurance.com/media/2376/fun-facts-about-russian-blue-cats.jpg"
+                },
+                {
+                    "name": "photo 2",
+                    "thumbnail": "https://www.aspcapetinsurance.com/media/2376/fun-facts-about-russian-blue-cats.jpg"
+                }
+
             ]
         },
         {
-            "id": 2,
-            "name": "Album 2",
-            "thumbnail": "https://www.placecage.com/c/200/300",
+            "id": 3,
+            "name": "My Mom's Cat",
+            "thumbnail": "https://kittentoob.com/wp-content/uploads/2013/04/Jumping_Cats_11.jpg",
             "photos": [
                 {
-                    "name": "photo other thing...",
-                    "thumbnail": "https://www.placecage.com/c/200/300"
+                    "name": "photo 1",
+                    "thumbnail": "https://cdn.pixabay.com/photo/2018/05/09/21/47/cat-3386220__480.jpg"
+                },
+                {
+                    "name": "photo 2",
+                    "thumbnail": "https://cdn.pixabay.com/photo/2018/05/09/13/33/cute-3385285__480.jpg"
+                },
+                {
+                    "name": "photo 2",
+                    "thumbnail": "https://cdn.pixabay.com/photo/2018/05/09/13/33/cute-3385285__480.jpg"
+                }
+            ]
+        },
+
+        {
+            "id": 4,
+            "name": "Someone's Kittens",
+            "thumbnail": "https://kittentoob.com/wp-content/uploads/2013/04/Jumping_Cats_15.jpg",
+            "photos": [
+                {
+                    "name": "photo 1",
+                    "thumbnail": "https://kittentoob.com/wp-content/uploads/2013/04/Jumping_Cats_8.jpg"
+                },
+                {
+                    "name": "photo 2",
+                    "thumbnail": "https://kittentoob.com/wp-content/uploads/2013/04/Jumping_Cats_9.jpg"
+                },
+                {
+                    "name": "photo 2",
+                    "thumbnail": "https://kittentoob.com/wp-content/uploads/2013/04/Jumping_Cats_9.jpg"
+                }
+            ]
+        },
+
+        {
+            "id": 5,
+            "name": "Cat Lady World",
+            "thumbnail": "https://pbs.twimg.com/profile_images/832642894301364224/JWZ4RHm6.jpg",
+            "photos": [
+                {
+                    "name": "photo 1",
+                    "thumbnail": "https://i.guim.co.uk/img/media/e4ae055cd7e0b946e216e2a43a97fcf085c364e6/463_41_2032_1219/master/2032.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=3163793887d94d4ab0101270542ac46f"
+                },
+                {
+                    "name": "photo 2",
+                    "thumbnail": "https://i.pinimg.com/originals/57/94/83/579483d5bbc34dde4e2b80a9597810ea.jpg"
+                },
+                {
+                    "name": "photo 2",
+                    "thumbnail": "https://i.pinimg.com/originals/57/94/83/579483d5bbc34dde4e2b80a9597810ea.jpg"
+                }
+            ]
+        },
+
+        {
+            "id": 6,
+            "name": "Kitten World (not built yet)",
+            "thumbnail": "https://i.pinimg.com/originals/23/70/0b/23700b5cdca5c126cc4d470a66d719af.jpg",
+            "photos": [
+                {
+                    "name": "placeholder....",
+                    "thumbnail": "https://i.pinimg.com/originals/23/70/0b/23700b5cdca5c126cc4d470a66d719af.jpg"
+                },
+                {
+                    "name": "placeholder....",
+                    "thumbnail": "https://i.pinimg.com/originals/23/70/0b/23700b5cdca5c126cc4d470a66d719af.jpg"
+                },
+                {
+                    "name": "placeholder....",
+                    "thumbnail": "https://i.pinimg.com/originals/23/70/0b/23700b5cdca5c126cc4d470a66d719af.jpg"
                 }
             ]
         }

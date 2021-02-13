@@ -1,5 +1,55 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 20;
+  padding: 20;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-weight: normal;
+  align-self: center;
+}
+
+h3 {
+  font-weight: normal;
+  align-self: center;
+  font-size: 16px;
+}
+
+
+.App {
+  position: relative;
+}
+
+.header {
+  background-color: gray;
+  height: 150px;
+  width: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+
+}
+.albumLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.albumLinks img {
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.albumLinks p {
+  border-left: 1px solid black;
+
+}
+.fulllList {
+  background-color: lightgray;
+  align-items: center;
+  position: absolute;
+  border: 1px solid black;
+
 }
