@@ -18,12 +18,12 @@ export default function Album(props) {
              <div className="fullList">
                  <ul className="albumLinks">
             {albums.map((album) => {
-                return <p key={album.id}>
-                    <Link to={`album/${album.id}`}><img src={album.thumbnail}></img></Link>
-                <h3>{album.name}</h3></p>;
+                return <p align="center" key={album.id}>
+                    <li><Link to={`album/${album.id}`}><img src={album.thumbnail}></img></Link></li>
+                <li><h3>{album.name}</h3></li></p>;
             })}
 
-        </ul>f
+        </ul>
     </div>
 </div>
     )}

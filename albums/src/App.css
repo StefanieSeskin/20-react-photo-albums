@@ -14,6 +14,8 @@ h3 {
   font-weight: normal;
   align-self: center;
   font-size: 16px;
+
+
 }
 
 
@@ -34,22 +36,25 @@ h3 {
 .albumLinks {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1px;  
+  margin: 10px;
+  padding: 10px 20px;
 
 }
 
 .albumLinks img {
-  height: 200px;
+  max-height: 250px;
+  max-width:100%;
   margin-bottom: 10px;
-}
-
-.albumLinks p {
-  border-left: 1px solid black;
+  position: relative;
+  object-fit: cover;
 
 }
-.fulllList {
-  background-color: lightgray;
-  align-items: center;
-  position: absolute;
+
+li {
+  margin: 10px;
+  padding: 0px;
   border: 1px solid black;
+  list-style: none;
 
 }
