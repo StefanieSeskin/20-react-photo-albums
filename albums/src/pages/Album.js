@@ -1,5 +1,5 @@
-/* Ran out of time to style nav and get the album items lined up
-correctly in grid.  It seems to be different using React. */
+/* Getting the album items lined up
+correctly in grid just wouldn't work.  It seems to be different using React. */
 
 import {
     Link
