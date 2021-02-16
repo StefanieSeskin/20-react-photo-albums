@@ -7,6 +7,7 @@ import {
   } from 'react-router-dom';
 import { useState, useEffect } from 'react'
 import '../App.css';
+import Popup from "reactjs-popup";
       
 // function AlbumDetail(props) {
 //     return <div><Link to="/album/1">Album</Link>
