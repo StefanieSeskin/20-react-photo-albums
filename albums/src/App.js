@@ -16,7 +16,9 @@ export default function App() {
       <div>
         <Switch>
           <Route exact path="/" component={Album}></Route>
-          <Route path="/album/1" component={AlbumDetail}></Route>
+          <Route path="/album/:id" component={AlbumDetail}></Route>
+          <Route path="/album/2" component={AlbumDetail}></Route>
+
         </Switch>
       </div>
     </Router>

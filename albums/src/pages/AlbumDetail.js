@@ -1,46 +1,58 @@
+/* Ran out of time to style nav and get the album items lined up
+correctly in grid.  It seems to be different using React. */
+
 import {
-    Link
+    Link,
+    useParams
   } from 'react-router-dom';
 import { useState, useEffect } from 'react'
 import '../App.css';
+      
+// function AlbumDetail(props) {
+//     return <div><Link to="/album/1">Album</Link>
+//     </div>
+// }
+
 export default function AlbumDetail(props) {
 
-    const [albumDetails, setAlbumDetails] = useState([])
+const { id } = useParams()
+// console.log(id)
+
+    const [albumDetails, setAlbumDetails] = useState({})
     useEffect(() => {
-        fetch("http://localhost:3001/albums")
+      // console.log(props.match.params)
+        fetch(`http://localhost:3001/albums/${id}`)
             .then((resp) => resp.json())
             .then((data) => {
+              console.log(data)
                 setAlbumDetails(data);
             });
-    }, []);
-
-    const id = props.match.params.id
-    const [activeAlbum, setActiveAlbum] = useState(albumDetails.find((data) => data.id == id))
+    }, [id]);
 
     return  (
         <div className="App">
-           <div className="header"><h1>Album title </h1></div>
+           <div className="header"><h1>{albumDetails.name}</h1></div>
+           <ol className="nav">
+             <li><Link className="albumLink" to="/album/1">My Cat</Link></li>
+             <li><Link className="albumLink" to="/album/2">My Other Cat</Link></li>
+             <li><Link className="albumLink" to="/album/3">My Mom's Cat</Link></li>
+             <li><Link className="albumLink" to="/album/4">Someone's Kittens</Link></li>
+             <li><Link className="albumLink" to="/album/5">Cat Lady World</Link></li>
+             <li><Link className="albumLink" to="/album/6">Kittyland Love Centre</Link></li>
+             </ol>
              <div className="fullList">
-                 <div className="albumLinks">
-            {albumDetails.map((album) => {
-                return <p key={activeAlbum.id.photos}>
-                    <Link to={`activeAlbum/${activeAlbum.id.photos}`}></Link><img src={activeAlbum.photos.thumbnail}></img>
-                <h3>{activeAlbum.name}</h3></p>;
-            })}
+                 <ul className="albumLinks">
+            {albumDetails.photos && albumDetails.photos.map((photo, index) => {
+                return <p align="center" key={index}>
+                    <li className="photo">
+                    <img src={photo.thumbnail} alt="AlbumContents"></img></li>
+                <li className="caption" align="center"><h3>{photo.name}</h3></li></p>
+                
 
-        </div>
+            })}
+            
+        </ul>
     </div>
 </div>
-    )}
 
-
-
-//albumDetails.photos.thumbnail
-//albumDetails.photos.name 
-//
-
-
-
-// export default function AlbumDetail(props) {
-//     return <div>album detail</div>
-// }
+)}

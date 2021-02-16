@@ -1,3 +1,6 @@
+/* Ran out of time and energy to style nav and get the album items lined up
+correctly in grid.  It seems to be different using React. */
+
 * {
   margin: 20;
   padding: 20;
@@ -5,27 +8,29 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.App {
+  background-color: rgb(222, 222, 222);
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
 h1 {
   font-weight: normal;
   align-self: center;
+  font-size: 4vw;
 }
 
 h3 {
   font-weight: normal;
   align-self: center;
-  font-size: 16px;
+  font-size: 1.2vw;
 
 
-}
-
-
-.App {
-  position: relative;
 }
 
 .header {
   background-color: gray;
-  height: 150px;
+  height: 10vw;
   width: auto;
   align-items: center;
   display: flex;
@@ -43,18 +48,62 @@ h3 {
 }
 
 .albumLinks img {
-  max-height: 250px;
-  max-width:100%;
-  margin-bottom: 10px;
+  /* margin-top: 10px; */
+  height: 30vh;
+  max-width:70%;
+  /* margin-bottom: 10px; */
   position: relative;
   object-fit: cover;
+}
+.albumLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1px;  
+  margin: 10px;
+  padding: 10px 20px;
 
 }
 
-li {
-  margin: 10px;
-  padding: 0px;
+.albumLinks img {
+  height: 30vh;
+  max-width:70%;
+  position: relative;
+  object-fit: cover;
+}
+
+
+ul li {
+  margin: 2px 20px 20px 2px;
   border: 1px solid black;
   list-style: none;
+  background-color: white;
 
+}
+
+ul li:nth-child(odd) {
+  background-color: rgb(222, 222, 222);
+}
+
+ol li {
+  margin: 2px 20px 20px 2px;
+  list-style: none;
+
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2vw;
+
+}
+
+
+.nav {
+  display: flex;
+  flex-direction: columns;
+  border: 1px solid black;
+  justify-content: space-evenly;
+  background-color: white;
+  padding-top: 10px;
 }

@@ -1,3 +1,6 @@
+/* Ran out of time to style nav and get the album items lined up
+correctly in grid.  It seems to be different using React. */
+
 import {
     Link
   } from 'react-router-dom';
@@ -19,8 +22,10 @@ export default function Album(props) {
                  <ul className="albumLinks">
             {albums.map((album) => {
                 return <p align="center" key={album.id}>
-                    <li><Link to={`album/${album.id}`}><img src={album.thumbnail}></img></Link></li>
-                <li><h3>{album.name}</h3></li></p>;
+                    <li className="photo">
+                        <Link to={`album/${album.id}`}><img src={album.thumbnail} alt="AlbumThumbnail">
+                        </img></Link></li>
+                <li className="caption"><h3>{album.name}</h3></li></p>;
             })}
 
         </ul>
