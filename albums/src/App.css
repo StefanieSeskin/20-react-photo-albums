@@ -36,16 +36,13 @@ h3 {
   display: flex;
   justify-content: center;
   border: 2px solid black;
-
 }
-.albumLinks {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1px;  
-  margin: 10px;
-  padding: 10px 20px;
 
+.fullList {
+  object-fit: cover;
 }
+
+
 
 .albumLinks img {
   /* margin-top: 10px; */
@@ -62,21 +59,15 @@ h3 {
   margin: 10px;
   padding: 10px 20px;
 
-}
 
-.albumLinks img {
-  height: 30vh;
-  max-width:70%;
-  position: relative;
-  object-fit: cover;
 }
-
 
 ul li {
   margin: 2px 20px 20px 2px;
   border: 1px solid black;
   list-style: none;
   background-color: white;
+
 
 }
 
